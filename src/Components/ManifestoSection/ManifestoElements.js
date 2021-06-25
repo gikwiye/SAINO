@@ -2,65 +2,58 @@ import styled from 'styled-components';
 
 
 export const ManifestoContainer = styled.div`
-    
+    display:flex;
+    position:relative;
     background-color: #141414;
-    width: 100%;
+    width: auto;
+    overflow-x: clip;
     height: 1170px;
-    top: 1300px;
-    overflow-x:clip;
-    
 `
 export const ManifestoWrapper = styled.div`
-    
+    display:flex;
     position:relative;
     width:100%;
     height:100%;
     
-    
-
+    left:20%;
+    @media screen and (max-width:1679px){
+        left: 10%;
+    }
 `
 export const ManifestoTitleContainer = styled.div`
     
-    position:absolute;
-    width:357px;
-    height:39px;
-    left:155px;
-    top:160px;
+    position:relative;
+    width:440px;
+    height:auto;
+    top:154px;
 `
 
 export const ManifestoTitle = styled.h1`
     font-family: 'Legatum-Light';
+    height:auto;
     font-size:48px;
-    line-height:14px;
     color:#FFFFFF;
 `
 
 export const ManifestoText= styled.p`
-    position:absolute;
-    width:438px;
+    position:relative;
+    width:auto;
     height:200px;
-    left:155px;
-    top:224px;  
+    top:30px;  
     color:#FFFFFF;
     z-index:2;
     font-size:14px;
     line-height:24px;
     font-family:'Montserrat_regular';
-
-    @media screen and (max-width:600px){
-        width:auto;
-    }
 `
 export const ManifestoBgText = styled.h1`
     
-    position: absolute;
-    width: 1529px;
-    height: 63px;
+    position: relative;  
     font-family: 'Legatum-Light';
+    height:fit-content;
     font-size: 200px;
-    line-height: 14px;
-    top:422px;
-    left:385px;
+    top:240px;
+    margin-left: -150px;
     color: #202020;
 `
 
@@ -68,7 +61,6 @@ export const ManifestoFgImg = styled.div`
 position: absolute;
 width: 440px;
 height: 642px;
-left: 155px;
 top: 608px;
 background: #4A4A4A;
 
@@ -78,7 +70,7 @@ z-index:3;
 export const ManifestoTitleTpRight = styled.h1`
     position:absolute;
     top:660px;
-    left:730px;
+    left:500px;
     color:#FFFFFF;
     font-family: 'Legatum-Light';
     width: 224px;
@@ -91,7 +83,7 @@ export const ManifestoTitleTpRight = styled.h1`
 export const ManifestoTextTpRight = styled.p`
     position:absolute;
     top:700px;
-    left:730px;
+    left:500px;
     color:#FFFFFF;
     font-family:'Montserrat_regular';
     width: 555px;
@@ -104,7 +96,7 @@ export const ManifestoTextTpRight = styled.p`
 export const ManifestoTitleBtmLeft = styled.h1`
     position:absolute;
     top:872px;
-    left:730px;
+    left:500px;
     color:#FFFFFF;
     font-family: 'Montserrat_regular';
     width: 26px;
@@ -118,7 +110,7 @@ export const ManifestoTextBtmLeft = styled.p`
     
     position:absolute;
     top:901px;
-    left:730px;
+    left:500px;
     color:#FFFFFF;
     font-family:'Montserrat_regular';
     width: 210px;
@@ -132,7 +124,7 @@ export const ManifestoTitleBtmRight= styled.h1`
     width: 31px;
     height: 16px;
     top:872px;
-    left:1075px;
+    left:845px;
     color:#FFFFFF;
     font-family: 'Montserrat_regular';
     font-size: 12px;
@@ -145,7 +137,7 @@ export const ManifestoTextBtmRight = styled.p`
     
     position:absolute;
     top:901px;
-    left:1075px;
+    left:845px;
     color:#FFFFFF;
     font-family:'Montserrat_regular';
     width: 210px;

@@ -1,4 +1,6 @@
 import React from 'react'
+import GlobalFonts from '../../fonts/fonts'
+import Slider from '../../MaterialUI/Slider'
 import {RisingFundsContainer,
     RisingFundTitle,
     RisingFundText,
@@ -8,78 +10,86 @@ import {RisingFundsContainer,
     RisingFundAmountText,
     RisingFundMinInvest,
     RisingFundMinInvestText,
-    RisingFundMinSlider,
-    RisingFundMidSlider,
-    RisingFundMaxSlider,
-    RisingFundSliderFilled,
-    RisingFundSliderDot,
-    RisingFundSliderAll,
-    RisingFundSliderBigDot,
-    RisingFundSliderText} from './RisingFundsElements'
-
+    RisingFundSliderText,
+    RisingFundWrapper,
+    TextWrapper,
+    Num1Wrapper,
+    NumberWrapper,
+    Num2Wrapper,
+    Num3Wrapper,
+    SliderWrapper,
+    SliderTextWrapper,
+    
+    
+RisingFundSliderContainer} from './RisingFundsElements'
 const RisingFunds = () => {
+    
     return (
-        <>
+        <React.Fragment>
             <RisingFundsContainer>
-                <RisingFundTitle>
-                    Explication du déroulement
-                </RisingFundTitle>
-                <RisingFundText>
-                    Lorem ipsum dolor sit amet consectetur adipis elit.
-                </RisingFundText>
-                <RisingFundSeats>
-                    20
-                </RisingFundSeats>
-                <RisingFundSeatsText>
-                    place early investor restantes
-                </RisingFundSeatsText>
-                <RisingFundAmount>
-                    88K $
-                </RisingFundAmount>
-                <RisingFundAmountText>
-                    montant investit actuel
-                </RisingFundAmountText>
-                <RisingFundMinInvest>
-                    100K $
-                </RisingFundMinInvest>
-                <RisingFundMinInvestText>
-                    Investissement min actuel
-                </RisingFundMinInvestText>
-                <RisingFundMinSlider>
-                    0
-                </RisingFundMinSlider>
-                <RisingFundMidSlider>
-                    200K $
-                </RisingFundMidSlider>
-                <RisingFundMaxSlider>
-                    1M $
-                </RisingFundMaxSlider>
-                <RisingFundSliderFilled>
-            
-                </RisingFundSliderFilled>
-                <RisingFundSliderDot>
-
-                </RisingFundSliderDot>
-                <RisingFundSliderAll>
-
-                </RisingFundSliderAll>
-                <RisingFundSliderBigDot>
-                
-
-                </RisingFundSliderBigDot>
-                <RisingFundSliderText style={{left:'-33px'}}>
-                    Start <br/> Lancement
-                </RisingFundSliderText>
-                <RisingFundSliderText style={{left:'532px'}}>
-                    objectif  <br/> phase 1
-                </RisingFundSliderText>
-                <RisingFundSliderText style={{left:'1091px'}}>
-                    objectif <br/>phase 2  
-                </RisingFundSliderText>
-
+                <GlobalFonts/>
+                <RisingFundWrapper>
+                    <TextWrapper>
+                        <RisingFundTitle>
+                            Types d’investissements
+                        </RisingFundTitle>
+                        <RisingFundText>
+                            Lorem ipsum dolor sit amet consectetur adipis elit.
+                        </RisingFundText>
+                    </TextWrapper>
+                    <NumberWrapper>
+                        <Num1Wrapper>
+                            <RisingFundSeats>
+                                20
+                            </RisingFundSeats>
+                            <RisingFundSeatsText>
+                                place early investor restantes
+                            </RisingFundSeatsText>
+                        </Num1Wrapper>
+                        <Num2Wrapper>
+                            <Num3Wrapper>
+                                <RisingFundAmount>
+                                    88K $
+                                </RisingFundAmount>
+                                <RisingFundAmountText>
+                                    montant investit actuel
+                                </RisingFundAmountText>
+                            </Num3Wrapper>
+                            <Num3Wrapper>
+                                <RisingFundMinInvest>
+                                    100K $
+                                </RisingFundMinInvest>
+                                <RisingFundMinInvestText>
+                                    Investissement min actuel
+                                </RisingFundMinInvestText>
+                            </Num3Wrapper>
+                        </Num2Wrapper>
+                    </NumberWrapper>
+                    <SliderWrapper>
+                            
+                            <RisingFundSliderContainer>
+                           
+                                    <Slider/>
+                           
+                                   
+                                
+                            </RisingFundSliderContainer>
+                            <SliderTextWrapper>
+                                <RisingFundSliderText >
+                                    Start <br/> Lancement
+                                </RisingFundSliderText>
+                                <RisingFundSliderText >
+                                    objectif  <br/> phase 1
+                                </RisingFundSliderText>
+                                <RisingFundSliderText >
+                                    objectif <br/>phase 2  
+                                </RisingFundSliderText>
+                            </SliderTextWrapper>
+                    </SliderWrapper>
+                    </RisingFundWrapper>
                 
             </RisingFundsContainer>
-        </>
+        </React.Fragment>
     )
 }
 

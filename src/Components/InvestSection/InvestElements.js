@@ -1,97 +1,82 @@
 import styled from 'styled-components'
 
 export const InvestContainer = styled.div`
-
+    display:flex;
     position:relative;
     width: 100%;
-    height: 1183px;
+    height: 1800px;
     left: 0px;
     top: 0px;
     background: #F0F0F0;
-    z-index:-99;
     overflow-x:clip;
+
+    
+`
+export const InvestWrapper= styled.div`
+    width:100%;
+    height:100%;
+    left:10%;
 `
 export const InvestTitle = styled.h1`
-    position: absolute;
+    position: relative;
     width: 555px;
     height: 33px;
     left: 155px;
-    top: 240px;
-
+    top: 156px;
     font-family: 'Montserrat_regular';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    /* or 100% */
-
     color: #C4C4C4;
 
 
 `
 export const InvestSubtitle = styled.p`
-    position: absolute;
+    position: relative;
     width: 440px;
     height: 182px;
     left: 155px;
-    top: 288px;
-
+    top: 179px;
     font-family: 'Legatum-Light';
     font-style: italic;
     font-weight: normal;
     font-size: 48px;
     line-height: 60px;
-    /* or 125% */
-
     color: #000000;
 `
 
-export const InvestText = styled.p`
-    position: absolute;
-    width: 439px;
-    height: 121px;
-    left: 845px;
-    top: 407px;
 
-    font-family: 'Montserrat_regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-    /* or 150% */
-
-    color: #000000;
-
-
-`
 
 export const InvestBgText=styled.h1`
-    position: absolute;
+    position: relative;
     width: 2015px;
     height: 63px;
-    left: 432px;
-    top: 514px;
-
+    left: 500px;
+    top: 226px;
     font-family: 'Legatum-Light';
     font-style: normal;
     font-weight: 500;
     font-size: 200px;
     line-height: 14px;
-    /* or 7% */
-
     color: #E6E6E6;
 
 `
 export const InvestTypeBlock = styled.div`
 
-    position: absolute;
+    position: relative;
     display:flex;
     width: 1130px;
     height: 508px;
-    left: 155px;
-    top: 555px;
+    left: 20%;
+    top: 210px;
+
     background: #FFFFFF;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+
+    @media screen and (max-width:1679px){
+        left: 10%;
+    }
 `
 
 export const InvestBlock = styled.div`
@@ -206,5 +191,54 @@ export const InvestBlockText=styled.p`
     line-height: 24px;
     /* or 171% */
     color: #4A4A4A;
+
+`
+export const InvestBottomPart = styled.div`
+    position: absolute;
+    display:flex;
+    width:1130px;
+    justify-content: space-between;
+    top:1100px;
+    left:20%;
+    @media screen and (max-width:1679px){
+        left:10%;
+    }
+    
+    
+
+
+`
+export const InvestBtmText = styled.div`
+
+    position:relative;
+    display:inline-block;
+    width:439px;
+    height:100px;
+`
+export const InvestHeading = styled.h1`
+    color:#BABABA;
+    font-size: 12px;
+    font-family:'GTWalsheim';
+    line-height: 16px;
+    padding-bottom:20px;
+
+`
+
+export const InvestBtmSubTitle = styled.h1`
+    padding-bottom:20px;
+    color:black;
+    font-size:24px;
+    font-family: 'GTWalsheim';
+    line-height: 30px;
+
+`
+export const InvestBtmSubText = styled.p`
+    
+    color:black;
+    font-size:14px;
+    font-family: 'GTWalsheim';
+    line-height:24px;
+    padding-bottom:50px;
+
 
 `

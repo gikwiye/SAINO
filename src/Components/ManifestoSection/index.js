@@ -14,20 +14,21 @@ import {
     ManifestoTextBtmLeft,
     ManifestoTitleBtmRight,
     ManifestoTextBtmRight } from './ManifestoElements'
+    import { useTranslation } from 'react-i18next'
+    
 
 
 const Manifesto = () => {
+    const {t} = useTranslation();
     return (
-        <>
+        <React.Fragment>
             <ManifestoContainer>
             <GlobalFonts/>
             <ManifestoWrapper>
              <ManifestoTitleContainer>
                 <ManifestoTitle>
-                    Lorem ipsum
+                    {t("Lorem ipsum")}
                 </ManifestoTitle>
-             </ManifestoTitleContainer>
-            
                 <ManifestoText>
                     A l’heure actuelle, nous en sommes 
                     encore au stade du développement des 
@@ -41,9 +42,13 @@ const Manifesto = () => {
                     premières applications des smart contract 
                     ayant un véritable impact et un pouvoir disruptif indéniable.
                 </ManifestoText>
-                <ManifestoBgText>
+                
+             </ManifestoTitleContainer>
+            
+             <ManifestoBgText>
                     Manifesto
-                </ManifestoBgText>
+            </ManifestoBgText>
+                
                 <ManifestoFgImg>
 
                 </ManifestoFgImg>
@@ -77,7 +82,7 @@ const Manifesto = () => {
             </ManifestoWrapper>
             </ManifestoContainer>
             
-        </>
+            </React.Fragment>
     )
 }
 

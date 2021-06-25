@@ -1,9 +1,9 @@
 import React from 'react'
+import CustomizedAccordions from '../../MaterialUI/Accordion'
 import {
     InvestContainer,
     InvestTitle,
     InvestSubtitle,
-    InvestText,
     InvestBgText,
     InvestTypeBlock,
     InvestBlock,
@@ -13,24 +13,28 @@ import {
     InvestBlockTitleDex,
     InvestUnderline,
     InvestSubTitle,
-    InvestBlockText
+    InvestBottomPart,
+    InvestBlockText,
+    InvestWrapper,
+    InvestBtmText,
+    InvestHeading,
+    InvestBtmSubTitle,
+    InvestBtmSubText
 } from './InvestElements'
+import GlobalFonts from '../../fonts/fonts'
 const Invest = () => {
     return (
-        <>
+        <React.Fragment>
             <InvestContainer>
+                <GlobalFonts/>
+                <InvestWrapper>
                 <InvestTitle>
                     Types d’investissements
                 </InvestTitle>
                 <InvestSubtitle>
                     Lorem ipsum dolor sit amet consectetur adipis elit.
                 </InvestSubtitle>
-                <InvestText>
-                    Une combinaison de ces 3 types d’investissement permet
-                    d’obtenir des retour sur investissement potentiels extrêmement
-                    importants pour un risque le plus faible possible dans le secteur
-                    des crypto-actifs.
-                </InvestText>
+                
                 <InvestBgText>
                     Investissements
                 </InvestBgText>
@@ -86,8 +90,50 @@ const Invest = () => {
                         </InvestBlockText>
                     </InvestLastBlock>
                 </InvestTypeBlock>
+                <InvestBottomPart>
+                    <InvestBtmText>
+                     <InvestHeading>
+                        Types d’investissements
+                     </InvestHeading>
+                     <InvestBtmSubTitle>
+                        Lorem ipsum dolor sit.
+                     </InvestBtmSubTitle>
+                     <InvestBtmSubText>
+                        Une combinaison de ces 3 types d’investissement 
+                        permet d’obtenir des retour sur investissement 
+                        potentiels extrêmement importants pour un risque 
+                        le plus faible possible dans le secteur des 
+                        crypto-actifs.
+                     </InvestBtmSubText>
+                     <InvestHeading>
+                        Types d’investissements
+                     </InvestHeading>
+                     <InvestBtmSubTitle>
+                        Lorem ipsum dolor sit.
+                     </InvestBtmSubTitle>
+                     <InvestBtmSubText>
+                        Nous estimons, qu’au jours d’aujourd’hui, les 
+                        crypto-actifs constituent la classe d’actif ayant 
+                        les retour sur investissement potentiels les plus 
+                        important tout marchés confondu. Il est donc totalement 
+                        pertinent d’investir une part relativement faible de son 
+                        patrimoine dans ce type d’actif. Une faible part de son 
+                        capital investit dans le secteur des crypto-actif permet 
+                        une démultiplication net de la croissance de son patrimoine 
+                        global dans le cas ou le secteur est haussier. Dans le cas ou 
+                        le secteur est baissier, ce même portfolio ne diminuera que très 
+                        peu. Risk reward
+                     </InvestBtmSubText>
+                    </InvestBtmText>
+                    <CustomizedAccordions/>
+                
+                </InvestBottomPart>
+                
+               
+
+                </InvestWrapper>
             </InvestContainer>
-        </>
+        </React.Fragment>
     )
 }
 

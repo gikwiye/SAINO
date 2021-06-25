@@ -1,46 +1,57 @@
 import React from 'react'
+import GlobalFonts from '../../fonts/fonts'
 import {
     TeamContainer,
+   
     TeamBgText,
     TeamTitle,
     TeamSubTitle,
     TeamBlockImg,
+    
+    TeamImageTextBlock,
     TeamBlockText} from './TeamElements'
 
 const Team = () => {
     return (
-        <>
+        <React.Fragment>
             <TeamContainer>
-            <TeamTitle>
-                Lorem ipsum dolor
-            </TeamTitle>
-            <TeamSubTitle>
-                Lorem ipsum dolor sit amet consectetur adipis elit.
-            </TeamSubTitle>
+                
+                <GlobalFonts/>
+            
                 <TeamBgText>
                     Team
                 </TeamBgText>
-                <TeamBlockImg style={{left: '155px',top: '475px'}}>
-
-                </TeamBlockImg>
-                <TeamBlockImg style={{left: '558px',top: '555px'}}>
-
-                </TeamBlockImg>
-                <TeamBlockImg style={{left: '961px',top: '375px'}}>
-
-                </TeamBlockImg>
-                <TeamBlockText style={{left: '155px',top: '1015px'}}>
-                    Lorem ipsum <br/>LOREM IPSUM DOLOR
+            
+            <TeamImageTextBlock style={{paddingTop:96 ,paddingRight:78}}>
+            <TeamTitle >
+                    Team
+                </TeamTitle>
+                <TeamSubTitle>
+                    Lorem ipsum dolor sit amet consectetur adipis elit.
+                </TeamSubTitle>
+                <TeamBlockImg />
+                <TeamBlockText >
+                    Lorem ipsum <br/><span style={{color:'#000000'}}>LOREM IPSUM DOLOR</span>
                 </TeamBlockText>
-                <TeamBlockText style={{left: '557px',top: '1095px'}}>
-                    Lorem ipsum <br/>LOREM IPSUM DOLOR
-                </TeamBlockText>
-                <TeamBlockText style={{left: '961px',top: '915px'}}>
-                    Lorem ipsum <br/>LOREM IPSUM DOLOR
-                </TeamBlockText>
+            </TeamImageTextBlock>
+            <TeamImageTextBlock style={{paddingTop:382}}>
+                <TeamBlockImg />
 
+                <TeamBlockText >
+                    Lorem ipsum <br/><span style={{color:'#000000'}}>LOREM IPSUM DOLOR</span>
+                </TeamBlockText>
+            </TeamImageTextBlock>
+                <TeamImageTextBlock style={{paddingTop:202, paddingLeft:78}}>
+                    <TeamBlockImg />
+
+                <TeamBlockText >
+                    Lorem ipsum <br/><span style={{color:'#000000'}}>LOREM IPSUM DOLOR</span>
+                </TeamBlockText>
+                </TeamImageTextBlock>
+            
+           
             </TeamContainer>
-        </>
+        </React.Fragment>
     )
 }
 

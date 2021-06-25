@@ -17,7 +17,7 @@ import  {
     InvestmentBtmText} from './InvestmentElements'
 const Investment = () => {
     return (
-        <>
+        <React.Fragment>
             <InvestmentContainer>
                 <InvestmentBgText>
                     Investissements
@@ -72,7 +72,7 @@ const Investment = () => {
                     ne diminuera que très peu. Risk reward
                 </InvestmentBtmText>
             </InvestmentContainer>
-        </>
+        </React.Fragment>
     )
 }
 

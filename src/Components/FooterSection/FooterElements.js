@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
+    display:flex;
     position: relative;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 320px;
     left: 0px;
@@ -9,15 +12,14 @@ export const FooterContainer = styled.div`
     background: #000000;
 `
 export const FooterLogo = styled.div`
-    position: absolute;
+    position: relative;
     width: 94px;
     height: 90px;
-    left: 156px;
-    top: 42px;
+    
 `
 
 export const FooterContentTitle = styled.h1`
-    position: absolute;
+    position: relative;
     width: 172px;
     height: 33px;
     font-family: 'Montserrat_regular';
@@ -29,7 +31,7 @@ export const FooterContentTitle = styled.h1`
 `
 
 export const FooterContentText = styled.p`
-    position: absolute;
+    position: relative;
     width: 199px;
     height: 87px;
     font-family: 'Montserrat_regular';
@@ -42,15 +44,19 @@ export const FooterContentText = styled.p`
     color: #FFFFFF;
 `
 export const FooterSocial = styled.div`
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px;
-    position: absolute;
+    
+    
     width: 150px;
     height: 15.16px;
-    left: 1075px;
-    top: 107px;
     color:#FFFFFF;
+`
+export const FooterText = styled.div`
+    position:relative;
+    width:auto;
+    height:auto;
+
 `

@@ -2,29 +2,41 @@ import styled from 'styled-components'
 
 export const ExploreContainer = styled.div`
     display:flex;
-    height:500px;
+    position: relative;
+    height:509px;
     margin:0 auto;
     background:#F2F2F2; 
-    @media screen and (max-width:1353px){
-        height:900px;
-    }
+    flex-direction: column;
+    justify-content: center;
+    
+    
 `
 
-export const ExploreTitle=styled.h1`
+export const ExploreTitle = styled.h1`
 
-    position: relative;
-    color:black;
-    width:278px;
-    left: 153px;
-    top: 145px;
-    font-size: 24px;
-    line-height: 14px;
-    font-family:'Legatum-Light';
+    position: absolute;
+    color:#898989;
+    font-size: 12px;
+    margin-left:150px;
+    top:45px;
     
-    @media screen and (max-width:1181px){
-        
-        line-height:20px;
-    }
+    font-family:'GTWalsheim';
+    
+   
+`
+export const ExploreSubTitle= styled.h1`
+    position: absolute;
+    font-family: 'GTWalsheim';
+    font-style: normal;
+    font-size: 80px;
+    line-height: 90px;
+    margin-left: 150px;
+    top:70px;
+    
+/* or 112% */
+    text-transform: uppercase;
+
+    color: #DDD9D9;
 `
 
 export const ExploreWrapper = styled.div`
@@ -33,34 +45,23 @@ export const ExploreWrapper = styled.div`
     justify-content: space-around;
     width:100%;
     position:relative;
-    top:221px;
+    margin-left: 0px;
+    
+    
 
-    @media screen and (max-width:1353px){
-        flex-direction:column ;
-        justify-content: space-evenly;
-        top:50px;
-    }
+    
     
 `
-export const ExploreHeader=styled.h1`
+export const ExploreHeader = styled.h1`
 
     font-family:'Montserrat_bold';
     padding-bottom: 9px;
     font-size:12px;  
-    @media screen and (max-width:281px){
-        
-        
-        left:75px;
-    }
-    @media screen and (max-width:376px){
-        
-        
-        left:75px;
-    }
+   
 
 
 `
-export const ExploreColumn=styled.div`
+export const ExploreColumn = styled.div`
     
     display: inline-block;
     position: relative;
@@ -68,30 +69,15 @@ export const ExploreColumn=styled.div`
     width:325px;
     height:90px;
 
-    @media screen and (max-width:281px){
-
-        width:200px;
-    }
-    @media screen and (max-width:376px){
-        
-        width:200px;
-    }
-
+   
     
 `
-export const ExploreText=styled.p`
+export const ExploreText = styled.p`
     
     height:90px;
     line-height: 24px;
     font-family: 'Montserrat_regular';
 
-    @media screen and (max-width:281px){
-        font-size: 10px;
-        width:200px;
-    }
-    @media screen and (max-width:376px){
-        
-        width:200px;
-    }
+   
 
 `

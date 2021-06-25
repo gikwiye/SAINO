@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import {Link as LinkR} from 'react-router-dom'
-import {Link as LinkS} from 'react-scroll'
+import { Link as LinkR } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: Black;
-    height:120px;
-    /*margin-top: -120px; */
+    background: ${({scrollNav})=>(scrollNav ? '#000':'transparent')};
+    height:140px;
+    margin-top: -140px; 
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     position:sticky;
     top:0;
     z-index:10;
+    transition: background-color 200ms linear;
     @media screen and (max-width:960px){
         transition: 0,5s all ease;
     }
@@ -20,10 +21,10 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display:flex;
     justify-content:space-between;
-    height: 80px;
+    height:auto;
     z-index:1;
     width:100%;
-    padding:0 24px;
+    padding:0 138px;
     
 
 `
@@ -36,7 +37,7 @@ export const NavLogo = styled(LinkR)`
     align-items: center;
     margin-left:40px;
     font-weight:bold;
-    text-decoration:none;
+    height:auto;
 `
 
 export const MobileIcon = styled.div`
@@ -59,27 +60,35 @@ export const NavMenu = styled.ul`
     align-items: center; 
     list-style: none;
     text-align: center; 
-    margin-right: -22px; 
-    font-family: 'Montserrat_thin';
+    //margin-right: -22px; 
+    font-family: 'GTWalsheim';
 
     @media screen and (max-width:768px){
         display:none;
     }
 `
 export const NavItem = styled.li`
-    height:80px;
+    height:auto;
+    width:auto;
+    padding: 0 1rem;
 `
 
-export const NavLinks= styled(LinkS)`
+export const NavLinks = styled(LinkS)`
 color:#fff;
 display:flex;
 align-items:center;
 text-decoration:none;
-padding: 0 1rem;
-height: 100%;
+height:100%;
 cursor: pointer;
 
 &.active {
     border-bottom : 3px solid #c3c7c5;
 }
+`
+export const Language = styled.select`
+width: 50px;
+height: 32px;
+background: #FFFFFF;
+border-radius: 4px;
+
 `

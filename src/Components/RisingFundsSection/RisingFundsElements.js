@@ -1,71 +1,77 @@
 import styled from 'styled-components';
 
 export const RisingFundsContainer = styled.div`
+
     position:relative;
     width: 100%;
-    height: 957px;
+    height: 1100px;
     left: 0px;
     top:0px;
-    z-index:-99;
     overflow-x:clip;
-    background: #F0F0F0;
+    background: #141414;
+    justify-content: center;
+    z-index:-2;
+
+`
+export const RisingFundWrapper = styled.div`
+    
+    position:relative;
+    width:100%;
+    height:100%;
 
 `
 
 export const RisingFundTitle = styled.h1`
-    position: absolute;
+    position: relative;
     width: 555px;
     height: 33px;
     left: 155px;
-    top: 220px;
-
-    font-family: 'Montserrat_regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    top: 97px;
+    font-family: 'GTWalsheim';
+    font-size: 12px;
+    
     color: #C4C4C4;
 
 `
 
 export const RisingFundText = styled.p`
 
-    position: absolute;
+    position: relative;
     width: 440px;
     height: 182px;
     left: 155px;
-    top: 268px;
-    font-family: 'Legatum-Light';
-    font-style: italic;
+    top: 100px;
+    font-family: 'GTWalsheim';
+    
     font-weight: normal;
-    font-size: 48px;
-    line-height: 60px;
-    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
 
 `
 
 export const RisingFundSeats = styled.h1`
-    position: absolute;
+    position: relative;
     width: 185px;
     height: 101px;
-    left: 250px;
-    top: 534px;
-    font-family: 'Montserrat_regular';
+    
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
+    font-size: 140px;
     line-height: 74px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
 `
 
 export const RisingFundSeatsText = styled.p`
-    position: absolute;
+    position: relative;
     width: 376px;
     height: 34px;
-    left: 155px;
-    top: 613px;
-    font-family: 'Montserrat_regular';
+    
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -73,33 +79,33 @@ export const RisingFundSeatsText = styled.p`
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 `
 
 
 export const RisingFundAmount = styled.h1`
-    position: absolute;
+    position: relative;
     width: 440px;
     height: 101px;
-    left: 500px;
-    top: 534px;
-    font-family: 'Montserrat_regular';
+    
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 74px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
 
 `
 
 export const RisingFundAmountText= styled.p`
-    position: absolute;
+    position: relative;
     width: 376px;
     height: 34px;
-    left: 532px;
-    top: 613px;
-    font-family: 'Montserrat_regular';
+ 
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -107,33 +113,33 @@ export const RisingFundAmountText= styled.p`
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 
 `
 
 
 export const RisingFundMinInvest = styled.h1`
-    position: absolute;
+    position: relative;
     width: 440px;
     height: 101px;
-    left: 876px;
-    top: 534px;
-    font-family: 'Montserrat_regular';
+    
+   
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 74px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
 `
 
 export const RisingFundMinInvestText= styled.p`
-    position: absolute;
+    position: relative;
     width: 376px;
     height: 34px;
-    left: 908px;
-    top: 613px;
-    font-family: 'Montserrat_regular';
+    
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -141,37 +147,36 @@ export const RisingFundMinInvestText= styled.p`
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 
 `
 export const RisingFundMinSlider= styled.h1`
-    position: absolute;
-    width: 376px;
+   
+    position: relative;
+    width: auto;
     height: 16px;
-    left: -26px;
-    top: 722px;
-
-    font-family: 'Montserrat_regular';
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-    text-align: center;
+  
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: #000000;
+    color: #FFFFFF;
 
 `
 
 export const RisingFundMidSlider= styled.h1`
-    position: absolute;
-    width: 376px;
+    position: relative;
+    width: auto;
     height: 16px;
-    left: 532px;
-    top: 722px;
+    
+    
 
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -179,16 +184,17 @@ export const RisingFundMidSlider= styled.h1`
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 
 `
 export const RisingFundMaxSlider= styled.h1`
-    position: absolute;
-    width: 376px;
+    position: relative;
+
+    width: auto;
     height: 16px;
-    left: 1091px;
-    top: 722px;
-    font-family: 'Montserrat_regular';
+    
+    
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -196,60 +202,70 @@ export const RisingFundMaxSlider= styled.h1`
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
 
 `
 
 export const RisingFundSliderFilled= styled.div`
-    position: absolute;
-    width: 273px;
+    position: relative;
+    left: 35px;
     height: 12px;
-    left: 155px;
-    top: 740px;
     background: #C4C4C4;
     border-radius: 12px;
 
 `
 
 export const RisingFundSliderDot= styled.div`
-   position: absolute;
+   position: relative;
     width: 24px;
     height: 24px;
-    left: 408px;
-    top: 734px;
+    //left: 267px;
+    
     border-radius:50%;
     background: #AAAAAA;
 `
 
+export const RisingFundSliderContainer = styled.div`
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    width:100%;
+
+    height:auto;
+    
+    
+    `
 export const RisingFundSliderAll= styled.div`
    
-    position: absolute;
-    width: 1129px;
+    position: relative;
+    width: 1000px;
     height: 12px;
-    left: 155px;
-    top: 740px;
+    left:35px;
     background: #EBEBEB;
     border-radius: 12px;
     z-index:-1;
 `
 
 export const RisingFundSliderBigDot= styled.div`
-    position: absolute;
+    position: relative;
     width: 56px;
     height: 56px;
-    left: 392px;
-    top: 718px;
+    //left: 251px;
+    
     opacity: 0.3;
     border-radius:50%;
     border: 2px solid #AAAAAA;
     box-sizing: border-box;
 `
 export const RisingFundSliderText= styled.div`
-    position: absolute;
+    position: relative;
     width: 376px;
     height: 34px;
-    top: 772px;
-    font-family: 'Montserrat_regular';
+    justify-content: left;
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -258,4 +274,81 @@ export const RisingFundSliderText= styled.div`
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #C1C1C1;
+`
+export const TextWrapper = styled.div`
+    position:relative;
+    width:100%;
+    height:auto;
+`
+export const NumberWrapper = styled.div`
+    
+    position:relative;
+    width:100%;
+    height:auto;
+    top:200px;
+    
+`
+export const Num1Wrapper = styled.div`
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    width:100%;
+    height:auto;
+
+
+`
+export const Num2Wrapper = styled.div`
+    display:flex;
+    position:relative;
+    width:100%;
+    height:auto;
+    justify-content: center;
+
+`
+
+export const Num3Wrapper = styled.div`
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    width:auto;
+    height:auto;
+`
+
+export const SliderWrapper = styled.div`
+    position: relative ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+    height:auto;
+    
+    top:300px;
+
+`
+
+export const SliderMetricWrapper = styled.div`
+    display: flex;
+    position:relative;
+    width:100%;
+    
+    height:auto;
+    justify-content: space-around;
+    
+
+`
+export const SliderWrapper2 = styled.div`
+
+    position: relative;
+    width: max-content;
+    
+    height:auto;
+
+`
+export const SliderTextWrapper =styled.div`
+        display:flex;
+        position:relative;
+        width: 1500px;
+        justify-content :space-between ;
 `

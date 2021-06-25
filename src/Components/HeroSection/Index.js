@@ -1,41 +1,38 @@
 import React from 'react'
 import GlobalFonts from '../../fonts/fonts'
-import {HeroContainer,HeroBg,ImageBg,ImageOv,HeroP2,HeroH1,HeroP1,TitleStyle1,HeroItalic} from './HeroElements'
-import Rectangle_1 from '../../Images/Pictures/Rectangle_1.jpg'
+import {HeroContainer,ImageOv,HeroP2,HeroH1,TitleStyle1,TextContainer,HeroP3} from './HeroElements'
+
+import { useTranslation } from 'react-i18next'
 
 
 
 const HeroSection = () => {
-    
+    const {t} = useTranslation();
     return (
         <HeroContainer>
+            <ImageOv/>
             <GlobalFonts/>
-
-            <HeroBg>
-
-                <ImageBg src={Rectangle_1}/>
-                <ImageOv/>
-                <HeroP2>
-                Fondé en 2020<br/>Dubai - UAE
-                </HeroP2>
-            </HeroBg>
             
+                
+            <TextContainer>
+                    
+                    <HeroP2>
+                        {t("Founded in 2020")}<br/>{t("Dubai - UAE")}
+                    </HeroP2>
+                    
+            
+                
                <HeroH1>
-                    <TitleStyle1>Capital <HeroItalic>for</HeroItalic>
+                    <TitleStyle1>{t("CAPITAL")} <br/><span style={{marginLeft:83+83}}>{t("FOR")}</span>
                         
-                    <br/>Growth</TitleStyle1>
+                    <br/><span style={{marginLeft:143+83+83}}>{t("GROWTH")}</span></TitleStyle1>
                 </HeroH1>
+                
+                </TextContainer>
+                <HeroP3>
+                LOREM IPSUM <br/>{t("Distributed Ledger Technology")}
+                </HeroP3>
 
-                 <HeroP1>
-                    Saino Ventures est une entreprise de 
-                    capital risque axé exclusivement sur 
-                    les Distributed Ledger Technologie. 
-                    Nous avons un role d’incubateur auprès des 
-                    projets ayant le potentiel de structurer l’écosysteme 
-                    Blockchain.
-                </HeroP1>
-
-            
         </HeroContainer>
     )
 }

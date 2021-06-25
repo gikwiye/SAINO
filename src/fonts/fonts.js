@@ -5,13 +5,18 @@ import Montserrat from './Monserrat/Montserrat-ExtraLight.ttf';
 import MontserratThin from './Monserrat/Montserrat-Thin.ttf';
 import MontserratRegular from './Monserrat/Montserrat-Regular.ttf';
 import MontserratBold from './Monserrat/Montserrat-Bold.ttf';
-import LaurentianStd from './Laurentian-Std-Regular/Laurentian_Std_Regular.otf'
-import LegatumLight from './Legatum/LEGATUM-Light.otf'
+import LaurentianStd from './Laurentian-Std-Regular/Laurentian_Std_Regular.otf';
+import LegatumLight from './Legatum/LEGATUM-Light.otf';
+import GTWalsheimPro from './GTWalsheimPro/GTWalsheimPro-Light.ttf'
 
 
 export default createGlobalStyle`
     
-    
+    @font-face {
+        font-family:'GTWalsheim' ;
+        src: local('GTWalsheim'), 
+        url(${GTWalsheimPro}) format('truetype');
+    }
 
     @font-face {
         font-family: 'Montserrat';

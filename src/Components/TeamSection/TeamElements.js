@@ -1,64 +1,94 @@
 import styled from 'styled-components'
 
 export const TeamContainer = styled.div`
+display:flex;
+flex-direction:row;
+justify-content: center;
     position: relative;
     width: 100%;
     height: 1282px;
-    left: 0px;
-    top: 0px;
-    overflow-x:clip;
-    background: #141414;
+    overflow-x: clip;
+    background: #E5E5E5;
 `
 
+
+
+export const TeamText = styled.div`
+
+    position:relative;
+    width:auto;
+    height:auto;
+    
+`
+export const TeamBlock = styled.div`
+    position:relative;
+    display:flex;
+    width: auto;
+    height:auto;
+
+`
+export const TeamImageTextBlock = styled.div`
+    position: relative;
+    width:auto;
+    height:auto;
+   
+
+
+
+`
 export const TeamBgText = styled.h1`
     position: absolute;
     width: 2015px;
     height: 63px;
-    left: 845px;
-    top: 1112px;
-    font-family: 'Legatum-Light';
+    left: 1100px;
+    top: 876px;
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: 500;
     font-size: 200px;
     line-height: 14px;
-    color: #202020;
+    color: #F6F6F6;
+
+    @media screen and (max-width:1679px){
+        left: 876px;
+    }
 `
 export const TeamTitle = styled.h1`
-    position: absolute;
-    width: 555px;
+    position: relative;
+    width: 324px;
     height: 33px;
-    left: 155px;
-    top:160px;
-    font-family: 'Montserrat_regular';
+    
+   
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 24px;
     color: #BABABA;
 `
 
 export const TeamSubTitle = styled.h1`
-    position: absolute;
-    width: 440px;
+    position: relative;
+    width: 324px;
     height: 182px;
-    left: 155px;
-    top: 208px;
-    font-family: 'Legatum-Light';
-    font-style: italic;
+    
+    
+    font-family: 'GTWalsheim';
+    
     font-weight: normal;
-    font-size: 48px;
-    line-height: 60px;
-    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 30px;
+    color:#000000;
 `
 
 export const TeamBlockImg= styled.div`
-    position: absolute;
+    position: relative;
     width: 325px;
     height: 520px;
     background: #4A4A4A;
 `
 export const TeamBlockText= styled.h1`
-    position: absolute;
+    position: relative;
     width: 325px;
     height: 34px;
     font-family:'Montserrat_regular';

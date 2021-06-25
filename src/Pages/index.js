@@ -5,7 +5,6 @@ import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar/Index'
 import Manifesto from '../Components/ManifestoSection'
 import Invest from'../Components/InvestSection'
-import Investment from '../Components/InvestmentSection'
 import RisingFunds from '../Components/RisingFundsSection/Index'
 import Team from '../Components/TeamSection'
 import Footer from '../Components/FooterSection'
@@ -18,18 +17,17 @@ const Home = () => {
         setIsOpen(!isOpen);
     }
     return (
-        <>
+        <React.Fragment>
           <Sidebar isOpen = {isOpen} toggle = {toggle}/>
-          <Navbar toggle ={toggle} />  
+          <Navbar toggle ={toggle}/>  
           <HeroSection/>
           <ExploreSection/>
           <Manifesto/>
           <Invest/>
-          <Investment/>
           <RisingFunds/>
           <Team/>
           <Footer/>
-        </>
+        </React.Fragment>
     )
 }
 
