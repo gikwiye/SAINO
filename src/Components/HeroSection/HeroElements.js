@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Rectangle_1 from '../../Images/Pictures/Rectangle_1.jpg'
+import { Link as LinkS } from 'react-scroll'
 
 
 
@@ -12,9 +13,9 @@ filter: grayscale(1);
 align-items:center;
 padding: 0 30 px;
 top:0;
-height:950px;
+height:1000px;
 position:relative;
-overflow:hidden
+overflow:hidden;
 `
 export const TextContainer  = styled.div`
 width: auto;
@@ -76,4 +77,34 @@ font-family:'GTWalsheim';
 
 export const TitleStyle1 = styled.p`
     font-family:'GTWalsheim';
+`
+export const KnowMore = styled.div`
+
+    position:absolute;
+    width:auto;
+    height:auto;
+    
+    top:850px;
+    left:167px;
+`
+export const KnowMoreText = styled.h1`
+
+    position:absolute;
+    font-size:12px;
+    font-family:'GTWalsheim' ;
+    color:white;
+    top:860px;
+    left:202px;
+`
+export const NavLinks = styled(LinkS)`
+color:#fff;
+display:flex;
+align-items:center;
+text-decoration:none;
+height:100%;
+cursor: pointer;
+
+&.active {
+    border-bottom : 3px solid #c3c7c5;
+}
 `

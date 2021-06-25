@@ -22,7 +22,7 @@ const Manifesto = () => {
     const {t} = useTranslation();
     return (
         <React.Fragment>
-            <ManifestoContainer>
+            <ManifestoContainer id="Manifesto">
             <GlobalFonts/>
             <ManifestoWrapper>
              <ManifestoTitleContainer>
@@ -30,23 +30,13 @@ const Manifesto = () => {
                     {t("Lorem ipsum")}
                 </ManifestoTitle>
                 <ManifestoText>
-                    A l’heure actuelle, nous en sommes 
-                    encore au stade du développement des 
-                    protocoles des futures DLT de demain 
-                    qui devront potentiellement constituer 
-                    des normes à l’échelles internationales. 
-                    Nous investissons donc principalement sur 
-                    des projets de type protocole. Nous estimons 
-                    également que la DeFi (finance décentralisé) 
-                    ainsi que les plateformes NFTs sont les 
-                    premières applications des smart contract 
-                    ayant un véritable impact et un pouvoir disruptif indéniable.
+                    {t("At the moment, we are still developing the protocols for future DLTs, which will potentially become international standards. We are therefore mainly investing in protocol-type projects. We also believe that DeFi (decentralized finance) and NFT platforms are the first smart contract applications with a real impact and undeniable disruptive power.")}
                 </ManifestoText>
                 
              </ManifestoTitleContainer>
             
              <ManifestoBgText>
-                    Manifesto
+                    {t("Manifesto")}
             </ManifestoBgText>
                 
                 <ManifestoFgImg>
@@ -56,28 +46,19 @@ const Manifesto = () => {
                     Lorem ipsum dolor
                 </ManifestoTitleTpRight>
                 <ManifestoTextTpRight>
-                    Nous investissons donc également majoritairement sur ce type de projet. 
-                    L'interopérabilité est également un point essentiel pour permettre une 
-                    évolution de cet écosysteme. Nous investissons donc majoritairement sur 
-                    des projets ayant cette notion d’intéropérabilité 
-                    tel que l’écosysteme Polkadot ou Cosmos. Ces trois axes constituent le 
-                    cœur de nos investissements actuellement.
+                {t("We therefore also invest mainly in this type of project. Interoperability is also an essential point to allow the evolution of this ecosystem. We therefore invest mainly in projects with this notion of interoperability, such as the Polkadot or Cosmos ecosystems. These three axes constitute the heart of our investments at present")}
                 </ManifestoTextTpRight>
                 <ManifestoTitleBtmLeft>
                     DLT
                 </ManifestoTitleBtmLeft>
                 <ManifestoTextBtmLeft>
-                    Distributed ledger technologie ou appelé plus communément et par abus 
-                    de language "technologies blockchain”. A savoir que la blockchain n’est 
-                    qu’un DLT parmis d’autres.
+                    {t("Distributed ledger technology or more commonly and by abuse of language called \"blockchain technologies\". The blockchain is only one DLT among others.")}
                 </ManifestoTextBtmLeft>
                 <ManifestoTitleBtmRight>
                     DAG
                 </ManifestoTitleBtmRight>
                 <ManifestoTextBtmRight>
-                    Distributed ledger technologie ou appelé plus communément et par abus de l
-                    anguage "technologies blockchain”. A savoir que la blockchain n’est qu’un 
-                    DLT parmis d’autres.
+                {t("Distributed ledger technology or more commonly and by abuse of language called \"blockchain technologies\". The blockchain is only one DLT among others.")}
                 </ManifestoTextBtmRight>
             </ManifestoWrapper>
             </ManifestoContainer>

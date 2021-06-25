@@ -22,26 +22,28 @@ import {
     InvestBtmSubText
 } from './InvestElements'
 import GlobalFonts from '../../fonts/fonts'
+import { useTranslation } from 'react-i18next'
 const Invest = () => {
+    const {t} = useTranslation();
     return (
         <React.Fragment>
-            <InvestContainer>
+            <InvestContainer id="Investment">
                 <GlobalFonts/>
                 <InvestWrapper>
                 <InvestTitle>
-                    Types d’investissements
+                    {t("Types of investments")}
                 </InvestTitle>
                 <InvestSubtitle>
                     Lorem ipsum dolor sit amet consectetur adipis elit.
                 </InvestSubtitle>
                 
                 <InvestBgText>
-                    Investissements
+                    {t("Investment")}
                 </InvestBgText>
                 <InvestTypeBlock>
                     <InvestBlock>
                         <InvestBlockTitleSeed>
-                            Seed
+                            {t("Seed")}
                         </InvestBlockTitleSeed>
                         <InvestUnderline>
                         </InvestUnderline>
@@ -49,17 +51,12 @@ const Invest = () => {
                         Ipsum dolor <br/>LOREM IPSUM DOLOR
                         </InvestSubTitle>
                         <InvestBlockText>
-                            Investissement au plus tôt. Une seed permet potentiellement d’obtenir 
-                            le token au meilleur prix. De plus, ce sont des sales fortement exclusives, 
-                            elle ne sont souvent accessibles qu’à une très faible minorité de fonds 
-                            d’investissement. Les retour sur investissement potentiels sont hors 
-                            catégories. Le risque est par contre beaucoup plus important ainsi que 
-                            le vesting.
+                            {t("Early investment. A seed potentially allows to get the token at the best price. Moreover, these are highly exclusive sales, they are often accessible only to a very small minority of investment funds. The potential return on investment is out of category. The risk is on the other hand much higher as well as the vesting.")}
                         </InvestBlockText>
                     </InvestBlock>
                     <InvestBlock>
                         <InvestBlockTitlePrivateSale>
-                            Private Sale
+                            {t("Private Sale")}
                         </InvestBlockTitlePrivateSale>
                         <InvestUnderline>
                         </InvestUnderline>
@@ -67,10 +64,7 @@ const Invest = () => {
                         Ipsum dolor <br/>LOREM IPSUM DOLOR
                         </InvestSubTitle>
                         <InvestBlockText>
-                            Similaires au Seed à la différence que le vesting est moins important. Le prix 
-                            est souvent légèrement supérieur au prix d’une seed mais dispose aussi d’un immense 
-                            retour sur investissement potentiel. Le risque reste important. Il est accessible à 
-                            un plus grand nombre de fonds d’investissement.
+                            {t("Similar to Seed with the difference that the vesting is less important. The price is often slightly higher than the price of a seed but also has a huge potential return on investment. The risk remains high. It is accessible to a larger number of investment funds.")}
                         </InvestBlockText>
                     </InvestBlock>
                     <InvestLastBlock >
@@ -83,46 +77,29 @@ const Invest = () => {
                         Ipsum dolor <br/>LOREM IPSUM DOLOR
                         </InvestSubTitle>
                         <InvestBlockText>
-                            Les retour sur investissement sont en moyenne bien moins élevés mais permettent de 
-                            croitre très rapidement car il n’y a pas de vesting. Il est également possible en période 
-                            de bear market sur le moyen ou le long terme d’obtenir des prix d’achat encore plus bas que 
-                            sur les seed. Ici l’analyse technique est très importante.
+                            {t("The return on investment is on average much lower but allows to grow very quickly because there is no vesting. It is also possible in a bear market period on the medium or long term to obtain even lower purchase prices than on the seed. Here the technical analysis is very important.")}
                         </InvestBlockText>
                     </InvestLastBlock>
                 </InvestTypeBlock>
                 <InvestBottomPart>
                     <InvestBtmText>
                      <InvestHeading>
-                        Types d’investissements
+                     {t("Types of investments")}
                      </InvestHeading>
                      <InvestBtmSubTitle>
                         Lorem ipsum dolor sit.
                      </InvestBtmSubTitle>
                      <InvestBtmSubText>
-                        Une combinaison de ces 3 types d’investissement 
-                        permet d’obtenir des retour sur investissement 
-                        potentiels extrêmement importants pour un risque 
-                        le plus faible possible dans le secteur des 
-                        crypto-actifs.
+                        {t("A combination of these 3 types of investment allows for extremely high potential returns for the lowest possible risk in the crypto asset sector.")}
                      </InvestBtmSubText>
                      <InvestHeading>
-                        Types d’investissements
+                     {t("Types of investments")}
                      </InvestHeading>
                      <InvestBtmSubTitle>
                         Lorem ipsum dolor sit.
                      </InvestBtmSubTitle>
                      <InvestBtmSubText>
-                        Nous estimons, qu’au jours d’aujourd’hui, les 
-                        crypto-actifs constituent la classe d’actif ayant 
-                        les retour sur investissement potentiels les plus 
-                        important tout marchés confondu. Il est donc totalement 
-                        pertinent d’investir une part relativement faible de son 
-                        patrimoine dans ce type d’actif. Une faible part de son 
-                        capital investit dans le secteur des crypto-actif permet 
-                        une démultiplication net de la croissance de son patrimoine 
-                        global dans le cas ou le secteur est haussier. Dans le cas ou 
-                        le secteur est baissier, ce même portfolio ne diminuera que très 
-                        peu. Risk reward
+                        {t("We believe that, as of today, crypto-assets are the asset class with the highest potential return on investment of any market. It is therefore totally relevant to invest a relatively small portion of one's wealth in this type of asset. A small part of one's capital invested in the crypto-asset sector allows a net multiplication of the growth of one's global wealth in the case where the sector is bullish. In case the sector is bearish, this same portfolio will only decrease a little. Risk reward")}
                      </InvestBtmSubText>
                     </InvestBtmText>
                     <CustomizedAccordions/>

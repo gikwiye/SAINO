@@ -4,6 +4,7 @@ import GlobalFonts from '../../fonts/fonts'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,Language } from './NavbarElements';
 import { AiOutlineBars } from 'react-icons/ai'
 import { useTranslation } from 'react-i18next'
+import {animateScroll as scroll} from 'react-scroll'
 
 
 const Navbar = ({ toggle }) => {
@@ -12,6 +13,7 @@ const Navbar = ({ toggle }) => {
     const onChange = (event)=>{
         i18n.changeLanguage(event.target.value)
     }
+    
     
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -25,6 +27,9 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll',changeNav)
     },[]);
 
+    const toggleHome = ()=>{
+        scroll.scrollToTop()
+    }
 
     return (
 
@@ -33,8 +38,10 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav = {scrollNav}>
                 <NavbarContainer>
                     <GlobalFonts />
-                    <NavLogo to="/">
-                        <img src={Logo} alt="Logo"/>
+                    <NavLogo to = '/' onClick = {toggleHome}>
+                        
+                            <img src={Logo} alt="Logo"/>
+                        
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <AiOutlineBars />
@@ -42,27 +49,31 @@ const Navbar = ({ toggle }) => {
                     <NavMenu>
                         <NavItem>
 
-                            <NavLinks to="Manifesto">
+                            <NavLinks to="Manifesto"
+                            smooth={true} duration={1500} spy={true} exact='true' offset={-140}>
                                 {t("Manifesto")}
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Manifest">
+                            <NavLinks to="Investment"
+                            smooth={true} duration={1500} spy={true} exact='true' offset={-140}>
                             {t("Investment")}
                         </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Manifest">
+                            <NavLinks to="Funds"
+                            smooth={true} duration={1500} spy={true} exact='true' offset={-140}>
                                 {t("Funds")}
                         </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Manifest">
+                            <NavLinks to="Teams"
+                            smooth={true} duration={1500} spy={true} exact='true' offset={-140}>
                                 {t("Team")}
                         </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <Language name = "Language" onChange = {onChange}>
+                            <Language  name = "Language" onChange = {onChange}>
                                 <option value = "en">En</option>
                                 <option value ="fr">Fr</option>
                             </Language>

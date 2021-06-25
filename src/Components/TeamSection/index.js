@@ -10,21 +10,22 @@ import {
     
     TeamImageTextBlock,
     TeamBlockText} from './TeamElements'
-
+    import { useTranslation } from 'react-i18next'
 const Team = () => {
+    const {t} = useTranslation();
     return (
         <React.Fragment>
-            <TeamContainer>
+            <TeamContainer id="Teams">
                 
                 <GlobalFonts/>
             
                 <TeamBgText>
-                    Team
+                    {t("Team")}
                 </TeamBgText>
             
             <TeamImageTextBlock style={{paddingTop:96 ,paddingRight:78}}>
             <TeamTitle >
-                    Team
+                {t("Team")}
                 </TeamTitle>
                 <TeamSubTitle>
                     Lorem ipsum dolor sit amet consectetur adipis elit.

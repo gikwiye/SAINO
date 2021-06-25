@@ -1,7 +1,7 @@
 import React from 'react'
 import GlobalFonts from '../../fonts/fonts'
-import {HeroContainer,ImageOv,HeroP2,HeroH1,TitleStyle1,TextContainer,HeroP3} from './HeroElements'
-
+import {HeroContainer,ImageOv,HeroP2,HeroH1,TitleStyle1,TextContainer,HeroP3,KnowMore,KnowMoreText,NavLinks} from './HeroElements'
+import {IoChevronDownCircleOutline} from 'react-icons/io5'
 import { useTranslation } from 'react-i18next'
 
 
@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 const HeroSection = () => {
     const {t} = useTranslation();
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <ImageOv/>
             <GlobalFonts/>
             
@@ -32,7 +32,15 @@ const HeroSection = () => {
                 <HeroP3>
                 LOREM IPSUM <br/>{t("Distributed Ledger Technology")}
                 </HeroP3>
-
+                <KnowMore >
+                <NavLinks to="Explore"
+                            smooth={true} duration={1500} spy={true} exact='true' offset={-140}>
+                    <IoChevronDownCircleOutline style= {{width:32,height:32, color:"#FFFFFF"}}/>
+                </NavLinks>
+                </KnowMore>
+                <KnowMoreText>
+                    {t("DISCOVER MORE.")}
+                </KnowMoreText>
         </HeroContainer>
     )
 }

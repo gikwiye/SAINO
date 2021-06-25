@@ -22,16 +22,17 @@ import {RisingFundsContainer,
     
     
 RisingFundSliderContainer} from './RisingFundsElements'
+import { useTranslation } from 'react-i18next'
 const RisingFunds = () => {
-    
+    const {t} = useTranslation();
     return (
         <React.Fragment>
-            <RisingFundsContainer>
+            <RisingFundsContainer id="Funds">
                 <GlobalFonts/>
                 <RisingFundWrapper>
                     <TextWrapper>
                         <RisingFundTitle>
-                            Types d’investissements
+                        {t("Types of investments")}
                         </RisingFundTitle>
                         <RisingFundText>
                             Lorem ipsum dolor sit amet consectetur adipis elit.
@@ -43,7 +44,7 @@ const RisingFunds = () => {
                                 20
                             </RisingFundSeats>
                             <RisingFundSeatsText>
-                                place early investor restantes
+                            {t("Early investor remaining seats")}
                             </RisingFundSeatsText>
                         </Num1Wrapper>
                         <Num2Wrapper>
@@ -52,7 +53,7 @@ const RisingFunds = () => {
                                     88K $
                                 </RisingFundAmount>
                                 <RisingFundAmountText>
-                                    montant investit actuel
+                                    {t("Current invested amount")}
                                 </RisingFundAmountText>
                             </Num3Wrapper>
                             <Num3Wrapper>
@@ -60,7 +61,7 @@ const RisingFunds = () => {
                                     100K $
                                 </RisingFundMinInvest>
                                 <RisingFundMinInvestText>
-                                    Investissement min actuel
+                                    {t("CURRENT MINIMUM INVESTMENT")}
                                 </RisingFundMinInvestText>
                             </Num3Wrapper>
                         </Num2Wrapper>

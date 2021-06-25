@@ -278,6 +278,7 @@ export const RisingFundSliderText= styled.div`
 export const TextWrapper = styled.div`
     position:relative;
     width:100%;
+    top:100px;
     height:auto;
 `
 export const NumberWrapper = styled.div`
