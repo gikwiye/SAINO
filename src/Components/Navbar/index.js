@@ -93,10 +93,7 @@ const Navbar = ({ toggle }) => {
                                 onChange={onChange}
                                 defaultValue = 'English'
                             />
-                            {/*<Language  name = "Language" onChange = {onChange}>
-                                <option value = "en">En</option>
-                                <option value ="fr">Fr</option>
-                            </Language>*/}
+                            
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
