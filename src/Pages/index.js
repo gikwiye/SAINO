@@ -8,7 +8,10 @@ import Invest from'../Components/InvestSection'
 import RisingFunds from '../Components/RisingFundsSection/Index'
 import Team from '../Components/TeamSection'
 import Footer from '../Components/FooterSection'
-
+const styleLink = document.createElement("link");
+styleLink.rel = "stylesheet";
+styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
+document.head.appendChild(styleLink);
 
 const Home = () => {
     const [isOpen,setIsOpen] = useState(false)

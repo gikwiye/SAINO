@@ -79,7 +79,7 @@ const RisingFunds = () => {
                                 <RisingFundSliderText >
                                     Start <br/> Lancement
                                 </RisingFundSliderText>
-                                <RisingFundSliderText >
+                                <RisingFundSliderText style = {{paddingLeft:30}}>
                                     objectif  <br/> phase 1
                                 </RisingFundSliderText>
                                 <RisingFundSliderText >

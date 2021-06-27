@@ -81,8 +81,12 @@ text-decoration:none;
 height:100%;
 cursor: pointer;
 
-&.active {
-    border-bottom : 3px solid #c3c7c5;
+&:hover {
+    border-bottom : 1px solid #c3c7c5;
+}
+&.active{
+    border-bottom : 1px solid #c3c7c5;
+
 }
 `
 export const Language = styled.select`

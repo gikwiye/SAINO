@@ -3,18 +3,20 @@ import styled from 'styled-components'
 export const InvestContainer = styled.div`
     display:flex;
     position:relative;
+    flex-direction:column;
     width: 100%;
-    height: 1800px;
-    left: 0px;
-    top: 0px;
+    //height:1800px;
+    //left: 0px;
+    //top: 0px;
     background: #F0F0F0;
     overflow-x:clip;
+  
 
     
 `
 export const InvestWrapper= styled.div`
     width:100%;
-    height:100%;
+    
     left:10%;
 `
 export const InvestTitle = styled.h1`
@@ -23,7 +25,7 @@ export const InvestTitle = styled.h1`
     height: 33px;
     left: 155px;
     top: 156px;
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -38,8 +40,7 @@ export const InvestSubtitle = styled.p`
     height: 182px;
     left: 155px;
     top: 179px;
-    font-family: 'Legatum-Light';
-    font-style: italic;
+    font-family: 'GTWalsheim';
     font-weight: normal;
     font-size: 48px;
     line-height: 60px;
@@ -54,7 +55,7 @@ export const InvestBgText=styled.h1`
     height: 63px;
     left: 500px;
     top: 226px;
-    font-family: 'Legatum-Light';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: 500;
     font-size: 200px;
@@ -103,7 +104,7 @@ export const InvestBlockTitleSeed = styled.h1`
     left: 140px;
     top: 60px;
 
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -121,7 +122,7 @@ export const InvestBlockTitlePrivateSale = styled.h1`
     left:107px;
     top:60px;
 
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -138,7 +139,7 @@ export const InvestBlockTitleDex = styled.h1`
     height: 33px;
     left: 114px;
     top: 60px;
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -166,7 +167,7 @@ export const InvestSubTitle = styled.div`
     left: 0px;
     top: 114px;
 
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -184,7 +185,7 @@ export const InvestBlockText=styled.p`
     left: 59px;
     top: 125px;
     text-align:left;
-    font-family: 'Montserrat_regular';
+    font-family: 'GTWalsheim';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -194,26 +195,23 @@ export const InvestBlockText=styled.p`
 
 `
 export const InvestBottomPart = styled.div`
-    position: absolute;
+    position: relative;
     display:flex;
     width:1130px;
+    margin-top:300px;
     justify-content: space-between;
-    top:1100px;
+    
     left:20%;
     @media screen and (max-width:1679px){
         left:10%;
     }
-    
-    
-
-
 `
 export const InvestBtmText = styled.div`
 
     position:relative;
     display:inline-block;
     width:439px;
-    height:100px;
+   
 `
 export const InvestHeading = styled.h1`
     color:#BABABA;
@@ -240,5 +238,13 @@ export const InvestBtmSubText = styled.p`
     line-height:24px;
     padding-bottom:50px;
 
+
+`
+export const InvestAccordion = styled.div`
+
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    margin-bottom:60px;
 
 `

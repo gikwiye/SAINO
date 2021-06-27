@@ -15,21 +15,22 @@ import {
     InvestSubTitle,
     InvestBottomPart,
     InvestBlockText,
-    InvestWrapper,
+    
     InvestBtmText,
     InvestHeading,
     InvestBtmSubTitle,
-    InvestBtmSubText
+    InvestBtmSubText,
+    InvestAccordion
 } from './InvestElements'
 import GlobalFonts from '../../fonts/fonts'
 import { useTranslation } from 'react-i18next'
 const Invest = () => {
     const {t} = useTranslation();
     return (
-        <React.Fragment>
+        <div>
             <InvestContainer id="Investment">
                 <GlobalFonts/>
-                <InvestWrapper>
+                
                 <InvestTitle>
                     {t("Types of investments")}
                 </InvestTitle>
@@ -102,15 +103,16 @@ const Invest = () => {
                         {t("We believe that, as of today, crypto-assets are the asset class with the highest potential return on investment of any market. It is therefore totally relevant to invest a relatively small portion of one's wealth in this type of asset. A small part of one's capital invested in the crypto-asset sector allows a net multiplication of the growth of one's global wealth in the case where the sector is bullish. In case the sector is bearish, this same portfolio will only decrease a little. Risk reward")}
                      </InvestBtmSubText>
                     </InvestBtmText>
-                    <CustomizedAccordions/>
-                
+                    <InvestAccordion>
+                        <CustomizedAccordions/>
+                    </InvestAccordion>
                 </InvestBottomPart>
                 
                
 
-                </InvestWrapper>
+                
             </InvestContainer>
-        </React.Fragment>
+        </div>
     )
 }
 

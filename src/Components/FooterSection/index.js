@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../Images/Icons/LOGO.png'
+import Logo from '../../Images/Icons/LOGO.svg'
 import {FooterContainer,FooterLogo,FooterContentTitle,FooterContentText,FooterSocial,FooterText} from './FooterElements'
 import {FiInstagram,FiFacebook,FiTwitter,FiLinkedin} from 'react-icons/fi'
 
