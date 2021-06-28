@@ -102,6 +102,6 @@ const Navbar = ({ toggle }) => {
 
             </React.Fragment>
     )
-}
+} 
 
 export default (Navbar)
