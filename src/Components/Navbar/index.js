@@ -30,8 +30,8 @@ const Navbar = ({ toggle }) => {
     },[]);
     const languageOptions = [
   
-        { key: 'English', text: 'English', value: 'en' },
-        { key: 'French', text: 'Français', value: 'fr' },
+        { key: 'English', text: 'En', value: 'en' },
+        { key: 'French', text: 'Fr', value: 'fr' },
       
       ]
     const toggleHome = ()=>{
@@ -89,11 +89,17 @@ const Navbar = ({ toggle }) => {
                                 className='icon'
                                 floating
                                 labeled
+                                icon = 'world'
                                 options={languageOptions}
-                                onChange={onChange}
-                                defaultValue = 'English'
+                                onChange = {onChange}
+                                defaultValue = 'En'
+                                placeholder = 'En'
+                                
                             />
-                            
+                            {/*<Language  name = "Language" onChange = {onChange}>
+                                <option value = "en">En</option>
+                                <option value ="fr">Fr</option>
+                            </Language>*/}
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
