@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import {AiOutlineClose} from 'react-icons/ai'
-import {Link as LinkS} from 'react-scroll'
-import {Link as LinkR} from 'react-router-dom'
+import { AiOutlineClose } from 'react-icons/ai'
+import { Link as LinkS } from 'react-scroll'
+import { Link as LinkR } from 'react-router-dom'
 
 export const SidebarContainer = styled.aside`
 position: fixed;
@@ -14,8 +14,8 @@ align-items: center;
 top:0;
 left:0;
 transition: 0.5s ease-in-out;
-opacity:${({isOpen})=>(isOpen ? '100%' : '0')};
-top:${({isOpen})=>(isOpen ? '0' : '-100%')};
+opacity:${({ isOpen }) => (isOpen ? '100%' : '0')};
+top:${({ isOpen }) => (isOpen ? '0' : '-100%')};
 
 `
 export const CloseIcon = styled(AiOutlineClose)`
@@ -30,7 +30,7 @@ font-size:2rem;
 cursor:pointer;
 outline:none;
 `
-export const SidebarWrapper =styled.div`
+export const SidebarWrapper = styled.div`
 color:#fff;
 `
 

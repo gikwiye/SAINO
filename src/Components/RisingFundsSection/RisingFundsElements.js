@@ -99,7 +99,7 @@ export const RisingFundAmount = styled.h1`
 
 `
 
-export const RisingFundAmountText= styled.p`
+export const RisingFundAmountText = styled.p`
     position: relative;
     width: 376px;
     height: 34px;
@@ -133,7 +133,7 @@ export const RisingFundMinInvest = styled.h1`
     color: #FFFFFF;
 `
 
-export const RisingFundMinInvestText= styled.p`
+export const RisingFundMinInvestText = styled.p`
     position: relative;
     width: 376px;
     height: 34px;
@@ -150,7 +150,7 @@ export const RisingFundMinInvestText= styled.p`
     color: #FFFFFF;
 
 `
-export const RisingFundMinSlider= styled.h1`
+export const RisingFundMinSlider = styled.h1`
    
     position: relative;
     width: auto;
@@ -169,7 +169,7 @@ export const RisingFundMinSlider= styled.h1`
 
 `
 
-export const RisingFundMidSlider= styled.h1`
+export const RisingFundMidSlider = styled.h1`
     position: relative;
     width: auto;
     height: 16px;
@@ -187,7 +187,7 @@ export const RisingFundMidSlider= styled.h1`
     color: #FFFFFF;
 
 `
-export const RisingFundMaxSlider= styled.h1`
+export const RisingFundMaxSlider = styled.h1`
     position: relative;
 
     width: auto;
@@ -206,7 +206,7 @@ export const RisingFundMaxSlider= styled.h1`
 
 `
 
-export const RisingFundSliderFilled= styled.div`
+export const RisingFundSliderFilled = styled.div`
     position: relative;
     left: 35px;
     height: 12px;
@@ -215,7 +215,7 @@ export const RisingFundSliderFilled= styled.div`
 
 `
 
-export const RisingFundSliderDot= styled.div`
+export const RisingFundSliderDot = styled.div`
    position: relative;
     width: 24px;
     height: 24px;
@@ -238,7 +238,7 @@ export const RisingFundSliderContainer = styled.div`
     
     
     `
-export const RisingFundSliderAll= styled.div`
+export const RisingFundSliderAll = styled.div`
    
     position: relative;
     width: 1000px;
@@ -249,7 +249,7 @@ export const RisingFundSliderAll= styled.div`
     z-index:-1;
 `
 
-export const RisingFundSliderBigDot= styled.div`
+export const RisingFundSliderBigDot = styled.div`
     position: relative;
     width: 56px;
     height: 56px;
@@ -260,7 +260,7 @@ export const RisingFundSliderBigDot= styled.div`
     border: 2px solid #AAAAAA;
     box-sizing: border-box;
 `
-export const RisingFundSliderText= styled.div`
+export const RisingFundSliderText = styled.div`
     position: relative;
     width: 376px;
     height: 34px;
@@ -347,7 +347,7 @@ export const SliderWrapper2 = styled.div`
     height:auto;
 
 `
-export const SliderTextWrapper =styled.div`
+export const SliderTextWrapper = styled.div`
         display:flex;
         position:relative;
         width: 1500px;

@@ -81,13 +81,13 @@ export const TeamSubTitle = styled.h1`
     color:#000000;
 `
 
-export const TeamBlockImg= styled.div`
+export const TeamBlockImg = styled.div`
     position: relative;
     width: 325px;
     height: 520px;
     background: #4A4A4A;
 `
-export const TeamBlockText= styled.h1`
+export const TeamBlockText = styled.h1`
     position: relative;
     width: 325px;
     height: 34px;

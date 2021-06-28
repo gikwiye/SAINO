@@ -35,7 +35,7 @@ export const ManifestoTitle = styled.h1`
     color:#FFFFFF;
 `
 
-export const ManifestoText= styled.p`
+export const ManifestoText = styled.p`
     position:relative;
     width:auto;
     height:200px;
@@ -119,7 +119,7 @@ export const ManifestoTextBtmLeft = styled.p`
     line-height: 24px;
 
     `
-export const ManifestoTitleBtmRight= styled.h1`
+export const ManifestoTitleBtmRight = styled.h1`
     position:absolute;
     width: 31px;
     height: 16px;

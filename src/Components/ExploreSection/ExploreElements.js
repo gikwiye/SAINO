@@ -9,6 +9,7 @@ export const ExploreContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     
+
     
 `
 
@@ -24,7 +25,7 @@ export const ExploreTitle = styled.h1`
     
    
 `
-export const ExploreSubTitle= styled.h1`
+export const ExploreSubTitle = styled.h1`
     position: absolute;
     font-family: 'GTWalsheim';
     font-style: normal;

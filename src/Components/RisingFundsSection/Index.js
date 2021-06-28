@@ -1,7 +1,8 @@
 import React from 'react'
 import GlobalFonts from '../../fonts/fonts'
 import Slider from '../../MaterialUI/Slider'
-import {RisingFundsContainer,
+import {
+    RisingFundsContainer,
     RisingFundTitle,
     RisingFundText,
     RisingFundSeats,
@@ -19,20 +20,21 @@ import {RisingFundsContainer,
     Num3Wrapper,
     SliderWrapper,
     SliderTextWrapper,
-    
-    
-RisingFundSliderContainer} from './RisingFundsElements'
+
+
+    RisingFundSliderContainer
+} from './RisingFundsElements'
 import { useTranslation } from 'react-i18next'
 const RisingFunds = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <React.Fragment>
             <RisingFundsContainer id="Funds">
-                <GlobalFonts/>
+                <GlobalFonts />
                 <RisingFundWrapper>
                     <TextWrapper>
                         <RisingFundTitle>
-                        {t("Types of investments")}
+                            {t("Types of investments")}
                         </RisingFundTitle>
                         <RisingFundText>
                             Lorem ipsum dolor sit amet consectetur adipis elit.
@@ -44,7 +46,7 @@ const RisingFunds = () => {
                                 20
                             </RisingFundSeats>
                             <RisingFundSeatsText>
-                            {t("Early investor remaining seats")}
+                                {t("Early investor remaining seats")}
                             </RisingFundSeatsText>
                         </Num1Wrapper>
                         <Num2Wrapper>
@@ -67,28 +69,28 @@ const RisingFunds = () => {
                         </Num2Wrapper>
                     </NumberWrapper>
                     <SliderWrapper>
-                            
-                            <RisingFundSliderContainer>
-                           
-                                    <Slider/>
-                           
-                                   
-                                
-                            </RisingFundSliderContainer>
-                            <SliderTextWrapper>
-                                <RisingFundSliderText >
-                                    Start <br/> Lancement
+
+                        <RisingFundSliderContainer>
+
+                            <Slider />
+
+
+
+                        </RisingFundSliderContainer>
+                        <SliderTextWrapper>
+                            <RisingFundSliderText >
+                                Start <br /> Lancement
                                 </RisingFundSliderText>
-                                <RisingFundSliderText style = {{paddingLeft:30}}>
-                                    objectif  <br/> phase 1
+                            <RisingFundSliderText style={{ paddingLeft: 30 }}>
+                                objectif  <br /> phase 1
                                 </RisingFundSliderText>
-                                <RisingFundSliderText >
-                                    objectif <br/>phase 2  
+                            <RisingFundSliderText >
+                                objectif <br />phase 2
                                 </RisingFundSliderText>
-                            </SliderTextWrapper>
+                        </SliderTextWrapper>
                     </SliderWrapper>
-                    </RisingFundWrapper>
-                
+                </RisingFundWrapper>
+
             </RisingFundsContainer>
         </React.Fragment>
     )

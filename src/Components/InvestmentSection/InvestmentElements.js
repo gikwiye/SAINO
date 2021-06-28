@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const InvestmentContainer= styled.div`
+export const InvestmentContainer = styled.div`
 
     position: relative;
     width: 100%;
@@ -10,7 +10,7 @@ export const InvestmentContainer= styled.div`
     background: #141414;
 `
 
-export const InvestmentBgText= styled.h1`
+export const InvestmentBgText = styled.h1`
     position: absolute;
     width: 2015px;
     height: 63px;
@@ -73,7 +73,7 @@ export const InvestmentTGETitle = styled.h1`
     color: #FFFFFF;
 `
 
-export const InvestmentTGEText= styled.p`
+export const InvestmentTGEText = styled.p`
     position: absolute;
     width: 210px;
     height: 166px;
@@ -117,7 +117,7 @@ export const InvestmentVestingText = styled.p`
     line-height: 24px;
     color: #FFFFFF;
 `
-export const InvestmentDEXTitle= styled.h1`
+export const InvestmentDEXTitle = styled.h1`
     position: absolute;
     width: 29px;
     height: 16px;
@@ -146,7 +146,7 @@ export const InvestmentDEXText = styled.p`
     line-height: 24px;
     color: #FFFFFF;
 `
-export const InvestmentCEXTitle= styled.h1`
+export const InvestmentCEXTitle = styled.h1`
     position: absolute;
     width: 30px;
     height: 16px;

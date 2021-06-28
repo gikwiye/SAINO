@@ -1,15 +1,16 @@
 import React from 'react'
 import GlobalFonts from '../../fonts/fonts'
-import { ExploreContainer, ExploreTitle, ExploreWrapper, ExploreHeader, ExploreText, ExploreColumn,ExploreSubTitle } from './ExploreElements'
+import { ExploreContainer, ExploreTitle, ExploreWrapper, ExploreHeader, ExploreText, ExploreColumn, ExploreSubTitle } from './ExploreElements'
 import { useTranslation } from 'react-i18next'
 
 const ExploreSection = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <React.Fragment>
-            <ExploreContainer id ='Explore'>
+            <ExploreContainer id='Explore'>
                 <GlobalFonts />
                 <ExploreTitle>
+
                     {t("EXPLORE")}
                 </ExploreTitle>
                 <ExploreSubTitle>

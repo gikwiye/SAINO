@@ -18,12 +18,12 @@ const Accordion = withStyles({
       display: 'none',
     },
     '&$expanded': {
-      margin:'auto',
-      
+      margin: 'auto',
+
     },
   },
   expanded: {},
-  
+
 })(MuiAccordion);
 
 const AccordionSummary = withStyles({
@@ -31,7 +31,7 @@ const AccordionSummary = withStyles({
     backgroundColor: '#F0F0F0',
     borderBottom: '1px solid rgba(0, 0, 0, .125)',
     marginBottom: -1,
-    
+
     minHeight: 56,
     '&$expanded': {
       minHeight: 56,
@@ -48,9 +48,9 @@ const AccordionSummary = withStyles({
 const AccordionDetails = withStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
-    backgroundColor:'#F0F0F0'
+    backgroundColor: '#F0F0F0'
   },
-  
+
 }))(MuiAccordionDetails);
 
 export default function CustomizedAccordions() {
@@ -59,15 +59,15 @@ export default function CustomizedAccordions() {
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-const myfontsize = 12;
+  const myfontsize = 12;
   return (
     <div >
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style = {{fontSize:myfontsize}}>TGE</Typography>
+          <Typography style={{ fontSize: myfontsize }}>TGE</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style = {{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -76,10 +76,10 @@ const myfontsize = 12;
       </Accordion>
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style ={{fontSize:myfontsize}}>VESTING</Typography>
+          <Typography style={{ fontSize: myfontsize }}>VESTING</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style ={{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -88,10 +88,10 @@ const myfontsize = 12;
       </Accordion>
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style ={{fontSize:myfontsize}}>DEX</Typography>
+          <Typography style={{ fontSize: myfontsize }}>DEX</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style ={{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -100,10 +100,10 @@ const myfontsize = 12;
       </Accordion>
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style = {{fontSize:myfontsize}}>CEX</Typography>
+          <Typography style={{ fontSize: myfontsize }}>CEX</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style = {{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -112,10 +112,10 @@ const myfontsize = 12;
       </Accordion>
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style = {{fontSize:myfontsize}}>DEX</Typography>
+          <Typography style={{ fontSize: myfontsize }}>DEX</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style = {{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -124,10 +124,10 @@ const myfontsize = 12;
       </Accordion>
       <Accordion square expanded={expanded === 'panel'} onChange={handleChange('panel')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header" expandIcon={<ExpandMoreIcon />}>
-          <Typography style = {{fontSize:myfontsize}}>CEX</Typography>
+          <Typography style={{ fontSize: myfontsize }}>CEX</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style = {{fontSize:myfontsize}}>
+          <Typography style={{ fontSize: myfontsize }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.

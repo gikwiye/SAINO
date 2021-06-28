@@ -5,7 +5,7 @@ import Slider from "@material-ui/core/Slider";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 1125 
+    width: 1125
   },
   margin: {
     height: theme.spacing(3)
@@ -32,33 +32,33 @@ const PrettoSlider = withStyles({
     color: "#C4C4C4",
     height: 8,
     width: 1125,
-    fontFamily:'Arial',
+    fontFamily: 'Arial',
   },
   thumb: {
     height: 24,
     width: 24,
     backgroundColor: "#AAAAAA",
-    
-    
+
+
     marginTop: -6,
     marginLeft: -12,
     "&:focus, &:hover, &$active": {
       boxShadow: "inherit"
     }
   },
-  mark:{
+  mark: {
     visibility: "hidden",
   },
-  markLabel:{
+  markLabel: {
 
-    fontFamily:'GTWalsheim',
+    fontFamily: 'GTWalsheim',
     color: '#FFF',
     transform: 'translateY(-35px) translateX(-10px)',
-    
+
 
   },
-  
-  
+
+
   active: {},
   valueLabel: {
     left: "calc(-50% + 4px)"
@@ -72,13 +72,13 @@ const PrettoSlider = withStyles({
     borderRadius: 12
   },
 
-  
-  
+
+
 })(Slider);
 
 export default function CustomizedSlider() {
   const classes = useStyles();
- 
+
   return (
     <div className={classes.root}>
       <PrettoSlider

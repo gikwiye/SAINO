@@ -1,5 +1,5 @@
 import React from 'react'
-import  {
+import {
     InvestmentContainer,
     InvestmentBgText,
     InvestmentTitle,
@@ -14,7 +14,8 @@ import  {
     InvestmentCEXText,
     InvestmentFgImg,
     InvestmentBtmTitle,
-    InvestmentBtmText} from './InvestmentElements'
+    InvestmentBtmText
+} from './InvestmentElements'
 const Investment = () => {
     return (
         <React.Fragment>
@@ -32,7 +33,7 @@ const Investment = () => {
                     TGE
                 </InvestmentTGETitle>
                 <InvestmentTGEText>
-                    Token generation event. C’est l'événement à partir 
+                    Token generation event. C’est l'événement à partir
                     duquel les tokens peuvent être vendu sur le marché.
                 </InvestmentTGEText>
                 <InvestmentVestingTitle>
@@ -40,8 +41,8 @@ const Investment = () => {
                 </InvestmentVestingTitle>
                 <InvestmentVestingText>
                     Distribution des tokens de manière étalé sur le temps.
-                     Recevoir par exemple 10% des tokens par mois pendant 
-                     10 mois.
+                    Recevoir par exemple 10% des tokens par mois pendant
+                    10 mois.
                 </InvestmentVestingText>
                 <InvestmentDEXTitle>
                     DEX
@@ -61,14 +62,14 @@ const Investment = () => {
                     Lorem ipsum dolor
                 </InvestmentBtmTitle>
                 <InvestmentBtmText>
-                    Nous estimons, qu’au jours d’aujourd’hui, les crypto-actifs 
-                    constituent la classe d’actif ayant les retour sur investissement 
-                    potentiels les plus important tout marchés confondu. Il est donc 
-                    totalement pertinent d’investir une part relativement faible de son 
-                    patrimoine dans ce type d’actif. Une faible part de son capital 
-                    investit dans le secteur des crypto-actif permet une démultiplication 
-                    net de la croissance de son patrimoine global dans le cas ou le secteur 
-                    est haussier. Dans le cas ou le secteur est baissier, ce même portfolio 
+                    Nous estimons, qu’au jours d’aujourd’hui, les crypto-actifs
+                    constituent la classe d’actif ayant les retour sur investissement
+                    potentiels les plus important tout marchés confondu. Il est donc
+                    totalement pertinent d’investir une part relativement faible de son
+                    patrimoine dans ce type d’actif. Une faible part de son capital
+                    investit dans le secteur des crypto-actif permet une démultiplication
+                    net de la croissance de son patrimoine global dans le cas ou le secteur
+                    est haussier. Dans le cas ou le secteur est baissier, ce même portfolio
                     ne diminuera que très peu. Risk reward
                 </InvestmentBtmText>
             </InvestmentContainer>

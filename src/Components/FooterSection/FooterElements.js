@@ -9,6 +9,7 @@ export const FooterContainer = styled.div`
     height: 320px;
     left: 0px;
     top: 0px;
+    
     background: #000000;
 `
 export const FooterLogo = styled.div`

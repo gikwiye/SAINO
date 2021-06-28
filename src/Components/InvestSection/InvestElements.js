@@ -14,7 +14,7 @@ export const InvestContainer = styled.div`
 
     
 `
-export const InvestWrapper= styled.div`
+export const InvestWrapper = styled.div`
     width:100%;
     
     left:10%;
@@ -49,7 +49,7 @@ export const InvestSubtitle = styled.p`
 
 
 
-export const InvestBgText=styled.h1`
+export const InvestBgText = styled.h1`
     position: relative;
     width: 2015px;
     height: 63px;
@@ -178,7 +178,7 @@ export const InvestSubTitle = styled.div`
     text-transform: uppercase;
     color: #BABABA;
 `
-export const InvestBlockText=styled.p`
+export const InvestBlockText = styled.p`
     position: relative;
     width: 260px;
     height: 276px;

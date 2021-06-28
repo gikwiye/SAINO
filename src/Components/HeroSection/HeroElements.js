@@ -17,7 +17,7 @@ height:1000px;
 position:relative;
 overflow:hidden;
 `
-export const TextContainer  = styled.div`
+export const TextContainer = styled.div`
 width: auto;
 height: auto;
 position: relative;
@@ -53,7 +53,7 @@ margin-top:-210px;
 
 `
 
-export const HeroH1= styled.h1`
+export const HeroH1 = styled.h1`
 position: relative;
 height: 178px;
 //left: 155px;
@@ -85,6 +85,7 @@ export const KnowMore = styled.div`
     height:auto;
     
     top:850px;
+
     left:167px;
 `
 export const KnowMoreText = styled.h1`
